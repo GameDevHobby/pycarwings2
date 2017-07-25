@@ -1,4 +1,5 @@
 # Copyright 2016 Jason Horne
+# Copyright 2017 Chris Gheen
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -220,7 +221,7 @@ class CarwingsBatteryStatusResponse(CarwingsResponse):
 
 		self._set_timestamp(status)
 		self._set_cruising_ranges(status)
-                
+		
 		self.answer = status
 
 		self.battery_capacity = status["batteryCapacity"]
@@ -507,7 +508,7 @@ class CarwingsLatestBatteryStatusResponse(CarwingsResponse):
 	def __init__(self, status):
 		CarwingsResponse.__init__(self, status["BatteryStatusRecords"])
 		
-                self.answer = status
+		self.answer = status
 
 		recs = status["BatteryStatusRecords"]
 
