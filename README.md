@@ -15,6 +15,8 @@ have to poll a corresponding method to find out if the operation was successful.
 More details are located at the top of [pycarwings2.py](https://github.com/GameDevHobby/pycarwings2/blob/master/pycarwings2/pycarwings2.py).
 # Installation
 pip install git+https://github.com/GameDevHobby/pycarwings2.git
+ - or - 
+pip3 install git+https://github.com/GameDevHobby/pycarwings2.git
 
 # example usage
 
